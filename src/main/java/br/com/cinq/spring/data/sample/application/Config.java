@@ -1,11 +1,9 @@
 package br.com.cinq.spring.data.sample.application;
 
-import javax.ws.rs.ApplicationPath;
-
 import org.glassfish.jersey.server.ResourceConfig;
 import org.springframework.context.annotation.Configuration;
 
-import br.com.cinq.spring.data.resource.SampleResource;
+import javax.ws.rs.ApplicationPath;
 
 /**
  * Register Jersey modules
@@ -16,7 +14,7 @@ import br.com.cinq.spring.data.resource.SampleResource;
 public class Config extends ResourceConfig {
 
     public Config() {
-        register(SampleResource.class);
+//        register(SampleResource.class);
         //		packages("br.com.cinq.greet.resource");
         //		property(ServletProperties.FILTER_FORWARD_ON_404, true);
     }

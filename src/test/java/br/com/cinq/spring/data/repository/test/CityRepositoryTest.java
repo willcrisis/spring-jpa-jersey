@@ -1,18 +1,10 @@
 package br.com.cinq.spring.data.repository.test;
 
-import java.util.List;
-
-import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.test.IntegrationTest;
-import org.springframework.boot.test.SpringApplicationConfiguration;
-import org.springframework.boot.test.WebIntegrationTest;
+import org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest;
 import org.springframework.test.context.ActiveProfiles;
-import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
-
-import br.com.cinq.spring.data.sample.application.Application;
+import org.springframework.test.context.junit4.SpringRunner;
 //import br.com.cinq.spring.data.sample.entity.City;
 //import br.com.cinq.spring.data.sample.entity.Country;
 //import br.com.cinq.spring.data.sample.repository.CityRepository;
@@ -20,11 +12,9 @@ import br.com.cinq.spring.data.sample.application.Application;
 /**
  * Eye candy: implements a sample in using JpaRespositories
  */
-@RunWith(SpringJUnit4ClassRunner.class)
-@SpringApplicationConfiguration(classes = Application.class)
-@WebIntegrationTest(randomPort = true)
-@IntegrationTest("server.port=9000")
+@RunWith(SpringRunner.class)
 @ActiveProfiles("unit")
+@DataJpaTest
 public class CityRepositoryTest {
 
 //    @Autowired
