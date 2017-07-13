@@ -34,7 +34,7 @@ INSERT INTO `City` (name, country_id) VALUES('Atlanta',2);
 INSERT INTO `City` (name, country_id) VALUES('Paris',3);
 INSERT INTO `City` (name, country_id) VALUES('Lyon',3);
 
-CREATE USER IF NOT EXISTS dbuser PASSWORD `dbuser`;
+CREATE USER IF NOT EXISTS dbuser PASSWORD 'dbuser';
 
 GRANT ALL ON Country TO dbuser;
 GRANT ALL ON City TO dbuser;

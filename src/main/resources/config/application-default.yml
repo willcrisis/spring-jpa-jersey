@@ -6,7 +6,8 @@ spring:
         password: dbuser
         max-wait: 1000
         max-active: 50
-        test-on-borrow: true
+        test-on-borrow: true,
+        platform: h2
     jpa:
         database-platform: org.hibernate.dialect.H2Dialect
         database: H2
