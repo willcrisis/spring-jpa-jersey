@@ -29,4 +29,12 @@ public class Country {
         this.name = name;
         return this;
     }
+
+    @Override
+    public String toString() {
+        return "{" +
+                "\"id\":" + id +
+                ", \"name\":\"" + name + '"' +
+                '}';
+    }
 }

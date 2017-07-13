@@ -42,4 +42,13 @@ public class City {
         this.country = country;
         return this;
     }
+
+    @Override
+    public String toString() {
+        return "{" +
+                "\"id\":" + id +
+                ", \"name\":\"" + name + '"' +
+                ", \"country\":" + country +
+                '}';
+    }
 }
