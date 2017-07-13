@@ -24,7 +24,16 @@ The candidate must:
 
 Feel free to modify the files included, upgrade frameworks, add or remove packages, in every aspect you want. Just check the note regarding JUnit tests below.
 
+# Before running
+
+Before run the package using `mvn spring-boot:run` or building the war file with `mvn packege`, run the following to install the QueryDSL's needed classes:
+
+```
+mvn install
+```
+
 # Expected results
+
 After the implementation, the application should run after the following command line:
 
 	java -jar target/spring-jpa-jersey.jar
