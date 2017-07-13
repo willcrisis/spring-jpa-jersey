@@ -1,6 +1,5 @@
-package br.com.cinq.spring.data.repository.test;
+package br.com.cinq.spring.data.sample.unit;
 
-import br.com.cinq.spring.data.sample.application.Application;
 import br.com.cinq.spring.data.sample.entity.City;
 import br.com.cinq.spring.data.sample.entity.Country;
 import br.com.cinq.spring.data.sample.repository.CityRepository;
@@ -9,7 +8,6 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest;
-import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.ActiveProfiles;
 import org.springframework.test.context.junit4.SpringRunner;
 
@@ -24,7 +22,6 @@ import java.util.List;
 @RunWith(SpringRunner.class)
 @ActiveProfiles("unit")
 @DataJpaTest
-@SpringBootTest(classes = Application.class)
 public class CityRepositoryTest {
 
     @Autowired

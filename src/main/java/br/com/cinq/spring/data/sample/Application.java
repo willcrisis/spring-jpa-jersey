@@ -1,4 +1,4 @@
-package br.com.cinq.spring.data.sample.application;
+package br.com.cinq.spring.data.sample;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;

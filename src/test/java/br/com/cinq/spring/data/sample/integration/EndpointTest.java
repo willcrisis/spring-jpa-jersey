@@ -1,6 +1,5 @@
-package br.com.cinq.spring.data.sample.test;
+package br.com.cinq.spring.data.sample.integration;
 
-import br.com.cinq.spring.data.sample.application.Application;
 import br.com.cinq.spring.data.sample.entity.City;
 import br.com.cinq.spring.data.sample.entity.Country;
 import org.json.JSONArray;
@@ -20,7 +19,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 @RunWith(SpringRunner.class)
-@SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT, classes = Application.class)
+@SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
 @ActiveProfiles("unit")
 public class EndpointTest {
 

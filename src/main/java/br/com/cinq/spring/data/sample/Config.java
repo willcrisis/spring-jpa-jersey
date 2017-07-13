@@ -1,4 +1,4 @@
-package br.com.cinq.spring.data.sample.application;
+package br.com.cinq.spring.data.sample;
 
 import br.com.cinq.spring.data.sample.controller.CityController;
 import br.com.cinq.spring.data.sample.controller.CountryController;
